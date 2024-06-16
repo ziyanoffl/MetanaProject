@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome to the Questionnaire</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5;
+        }
+        .btn-primary {
+            background-color: #b39ddb;
+            border-color: #b39ddb;
+        }
+        .btn-primary:hover {
+            background-color: #9575cd;
+            border-color: #9575cd;
+        }
+    </style>
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                window.location.href = "/start";
+            }
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 class="display-4">Launch your Data Career in Weeks, not Years</h1>
+        <p class="lead">What to expect: Short-answer questions & No cover letter. Takes 4 mins on average.</p>
+        <button class="btn btn-primary" onclick="window.location.href='/start'">Start your journey</button>
+        <p class="mt-3">Press "Enter" to start</p>
+        <p>139 people have filled this out</p> <!-- This should be dynamically updated based on the number of form submissions. -->
+    </div>
+</body>
+</html>
